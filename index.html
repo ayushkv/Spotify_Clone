@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Borel&family=Montserrat:wght@300;400&family=Poppins&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="logo.png">
+        <title>Spotify - Web Player: Music for everyone</title>
+    </head>
+    <body>
+        <!-- in main div all three component of the clone is desine i.e side-bar, playbar and content -->
+        <div class="main">
+            <!-- this is side-bar which includes two components i.e nav and library -->
+            <div class="side-bar">
+                <div class="nav">
+                    <div class="home">
+                        <i class="fa-solid fa-house"></i>
+                        <a href="#">Home</a>
+                    </div>
+                    <div class="search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <a href="#">Search</a>
+                    </div>
+                </div>
+                <!-- In library div we are going to create four divs  -->
+                <div class="library">
+                    <!-- This is the start of sub-divs of library div -->
+                    <div class="lib-one">
+                        <div class="your-lib">
+                            <img src="library_icon.png">
+                            <h2>Your library</h2>
+                        </div>
+                        <div class="lib-icons">
+                            <i class="fa-solid fa-plus"></i>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    <!-- This is the second part of library div -->
+                    <div class="lib-two">
+                        <div class="badge">Playlists</div>
+                    </div>
+                    <!-- This is the third part of library div -->
+                    <div class="lib-three">
+                        <i class="fa-solid fa-magnifying-glass search-lib-three"></i>
+                        <div class="recents">
+                            <p>recents</p>
+                            <i class="fa-solid fa-caret-down"></i>
+                        </div>
+                    </div>
+                    <!-- This the the last and fourt part of library div -->
+                    <div class="lib-four lib-four-one">
+                        <img src="./images/good_morning_images/spotifyLike.jpeg">
+                        <div class="song_content">
+                            <div class="title">Liked Songs</div>
+                            <div class="info">
+                                <i class="fa-solid fa-thumbtack"></i>
+                                <p>Playlist . 29 songs</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lib-four lib-four-two">
+                        <img src="honeysingh.jpeg">
+                        <div class="song_content">
+                            <div class="title">Honey Singh Old Songs Songs</div>
+                            <div class="info">
+
+                                <p style="margin-left: 0px;">Playlist . Ryan K</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lib-four lib-four-three">
+                        <img src="manalitrance.jpeg">
+                        <div class="song_content">
+                            <div class="title">Malali Trance</div>
+                            <div class="info">
+
+                                <p style="margin-left: 0px;">Playlist . Pratik
+                                    Taskar</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- This is the end of sub-divs of library div -->
+                </div>
+
+            </div>
+
+            <!-- this is play-bar other component of main div -->
+            <div class="play-bar">
+                <div id="play_bar_left">
+                    <div id="play_bar_left_image"> <img src="./images/play_bar/Nomercy.jpeg"></div>
+                    <div id="play_bar_left_info"><h5>No Mercy</h5>
+                        <a href="#">Dhanda Nyoliwala,</a><a href="#">Desi Melbourniya</a>
+                    </div>
+                    <div id="play_bar_left_icons">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-up-right-from-square"></i>
+                    </div>
+                </div>
+                <div id="play_bar_center">
+                    <div id="center_icons">
+                        <img src="player_icon1.png">
+                        <img src="player_icon2.png">
+                        <img src="player_icon3.png" id="center_pause">
+                        <img src="player_icon4.png">
+                        <img src="player_icon5.png">
+                    </div>
+                    <div id="center_play">
+                        <p>1:43</p>
+                        <input type="range" id="progress_bar">
+                        <p>3:05</p>
+                    </div>
+                </div>
+                <div id="play_bar_right">
+                    <i class="fa-regular fa-circle-play"></i>
+                    <i class="fa-solid fa-microphone"></i>
+                    <i class="fa-solid fa-mobile"></i>
+                    <i class="fa-solid fa-volume-high"></i>
+                    <input type="range" min="0" max="100" value="1" step="1">
+                </div>
+            </div>
+
+            <!-- this is content , other component of main div -->
+            <div class="content">
+
+                <div id="upper_nav">
+
+                    <div id="upper_nav_icons">
+                        <div id="upper_nav_icons_div">
+                            <div class="circle">
+                                <img src="backward_icon.png">
+                            </div>
+                            <div class="circle">
+                                <img src="forward_icon.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="upper_nav_options">
+                        <div id="upper_nav_badge_one">
+                            <h4>Explore Premium</h4>
+                        </div>
+                        <div id="upper_nav_badge_two">
+                            <i class="fa-regular fa-circle-down"></i>
+                            <h4>Install App</h4>
+                        </div>
+                        <div id="profile">
+                            <i class="fa-regular fa-user"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="lower_content">
+                    <div id="lower_content_one">
+                        <div class="heading">Good afternoon</div>
+                        <div id="songs">
+                            <div class="sub_songs"><img
+                                    src="./images/good_morning_images/bonjour.jpg">
+                                <h3>Dhanda Nyoliwala</h3>
+                            </div>
+                            <div class="sub_songs"><img
+                                    src="./images/good_morning_images/spotifyLike.jpeg">
+                                <h3>Liked Songs</h3>
+                            </div>
+                            <div class="sub_songs"><img
+                                    src="./images/good_morning_images/heerSharma.jpeg">
+                                <h3>Heer Sharma</h3>
+                            </div>
+                            <div class="sub_songs"><img
+                                    src="./images/good_morning_images/workout.jpeg">
+                                <h3>Haryanvi Workout</h3>
+                            </div>
+                            <div class="sub_songs"><img
+                                    src="./images/good_morning_images/jaat.jpeg">
+                                <h3>JAAT SONGS 💪🔥</h3>
+                            </div>
+                            <div class="sub_songs"><img
+                                    src="./images/good_morning_images/4Days.jpeg">
+                                <h3>4 Days</h3>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div id="lower_content_two">
+                        <div class="headings">
+                            <h4>Made For You</h4>
+                            <a href="#">Show all</a>
+                        </div>
+                        <div class="cards">
+                            <div class="card1">
+                                <img src="./images/made_for_you/unstoppable.jpg">
+                                <div class="about">
+                                    <h6>Daily Mix 1</h6>
+                                    <p>Dhanda Nyoliwala, Khasa Aala Chahar,
+                                        Kulvil Danod...</p>
+                                </div>
+                            </div>
+
+                            <div class="card1">
+                                <img src="./images/made_for_you/moosewala.jpeg">
+                                <div class="about">
+                                    <h6>Daily Mix 2</h6>
+                                    <p>Sidhu Moose Wala, Rav Aulakh, Shubh and
+                                        more</p>
+                                </div>
+                            </div>
+
+                            <div class="card1" id="last_second">
+                                <img src="./images/made_for_you/badshah.jpeg">
+                                <div class="about">
+                                    <h6>Daily Mix 3</h6>
+                                    <p>Badshah, Yo Yo Honey Singh, Pritam and
+                                        more</p>
+                                </div>
+                            </div>
+
+                            <div class="card1" id="last">
+                                <img src="./images/made_for_you/mankirt.jpeg">
+                                <div class="about">
+                                    <h6>Daily Mix 4</h6>
+                                    <p>Mankirt Aulakh, Tegi Pannu, Kambi and
+                                        more</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="headings">
+                            <h4>Suggested artists</h4>
+                            <a href="#">Show all</a>
+                        </div>
+                        <div class="cards">
+                            <div class="card1">
+                                <img
+                                    src="./images/suggested_artists/aakash.jpeg"
+                                    id="card_circle">
+                                <div class="about">
+                                    <h6>Aakash Khatri</h6>
+                                    <p>Artist</p>
+                                </div>
+                            </div>
+
+                            <div class="card1">
+                                <img
+                                    src="./images/suggested_artists/kaabil.jpeg"
+                                    id="card_circle">
+                                <div class="about">
+                                    <h6>Kaabil</h6>
+                                    <p>Artist</p>
+                                </div>
+                            </div>
+
+                            <div class="card1" id="last_second">
+                                <img src="./images/suggested_artists/yachi.jpeg"
+                                    id="card_circle">
+                                <div class="about">
+                                    <h6>Yachi Dhounchak</h6>
+                                    <p>Artist</p>
+                                </div>
+                            </div>
+
+                            <div class="card1" id="last">
+                                <img src="./images/suggested_artists/amit.jpeg"
+                                    id="card_circle">
+                                <div class="about">
+                                    <h6>Amit Kundu</h6>
+                                    <p>Artist</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="headings">
+                            <h4>Best of what india listens to!</h4>
+                            <a href="#">Show all</a>
+                        </div>
+                        <div class="cards">
+                            <div class="card1">
+                                <img src="./images/best_of_india/barbi.jpeg">
+                                <div class="about">
+                                    <h6>Barbie Official Playlist</h6>
+                                    <p>she's everything. He's just Ken. Listen
+                                        to the music...</p>
+                                </div>
+                            </div>
+
+                            <div class="card1">
+                                <img src="./images/best_of_india/tollywood.jpeg">
+                                <div class="about">
+                                    <h6>Tollywood Pearls</h6>
+                                    <p>The finest set of Telugu music from the
+                                        past 5...</p>
+                                </div>
+                            </div>
+
+                            <div class="card1" id="last_second">
+                                <img src="./images/best_of_india/bollywood.jpeg">
+                                <div class="about">
+                                    <h6>Bollywood butter</h6>
+                                    <p>B bole toh biggest blockbusters, right
+                                        here!...</p>
+                                </div>
+                            </div>
+
+                            <div class="card1" id="last">
+                                <img src="./images/best_of_india/indie.jpeg">
+                                <div class="about">
+                                    <h6>Indie India</h6>
+                                    <p>Best of the Indian Indie scene. Cover -
+                                        Shreye Jain</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="headings">
+                            <h4>More like Punjabi 101</h4>
+                            <a href="#">Show all</a>
+                        </div>
+                        <div class="cards">
+                            <div class="card1">
+                                <img src="./images/punjabi_101/hot_hits.jpeg">
+                                <div class="about">
+                                    <h6>Hot Hits Punjabi</h6>
+                                    <p>Catch the hottest Punjabi tracks with
+                                        Moose...</p>
+                                </div>
+                            </div>
+
+                            <div class="card1">
+                                <img
+                                    src="./images/punjabi_101/punjabi_pump.jpeg">
+                                <div class="about">
+                                    <h6>Punjabi Pump</h6>
+                                    <p>Pump up your adrenaline with Punjabi
+                                        hits!</p>
+                                </div>
+                            </div>
+
+                            <div class="card1" id="last_second">
+                                <img src="./images/punjabi_101/trending.jpeg">
+                                <div class="about">
+                                    <h6>Trending Now Punjabi</h6>
+                                    <p>All that's viral, stream now!</p>
+                                </div>
+                            </div>
+
+                            <div class="card1" id="last">
+                                <img src="./images/punjabi_101/bae.jpeg">
+                                <div class="about">
+                                    <h6>Punjabi Bae</h6>
+                                    <p>Artists that are always on our minds!</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="headings">
+                            <h4>More like Khasa Aala Chahar</h4>
+                            <a href="#">Show all</a>
+                        </div>
+                        <div class="cards">
+                            <div class="card1">
+                                <img src="./images/like_khasa/hot_hits.jpeg">
+                                <div class="about">
+                                    <h6>Hot Hits Haryanvi</h6>
+                                    <p>Catch all the top Haryanvi hits. Cover:
+                                        Renuka Panw...</p>
+                                </div>
+                            </div>
+
+                            <div class="card1">
+                                <img
+                                    src="./images/like_khasa/yo_hai_haryanvi.jpeg">
+                                <div class="about">
+                                    <h6>Yo Hai Haryanvi!</h6>
+                                    <p>Biggest hits from the Haryanvi
+                                        language...</p>
+                                </div>
+                            </div>
+
+                            <div class="card1" id="last_second">
+                                <img src="./images/like_khasa/trending.jpeg">
+                                <div class="about">
+                                    <h6>Trending Now Harya...</h6>
+                                    <p>All the trending Haryanvi hits you should
+                                        be listenin...</p>
+                                </div>
+                            </div>
+
+                            <div class="card1" id="last">
+                                <img src="./images/like_khasa/mote_peg.jpeg">
+                                <div class="about">
+                                    <h6>Mote peg</h6>
+                                    <p>Sumit Parta</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div id="footer">
+                    <div id="upper_footer">
+                        <div id="footer_content">
+                            <div id="companies">
+                                <h5>Company</h5>
+                                <a href="#">About</a>
+                                <a href="#">Jobs</a>
+                                <a href="#">For the Record</a>
+                            </div>
+                            <div id="communities">
+                                <h5>Communities</h5>
+                                <a href="#">For Artists</a>
+                                <a href="#">Developers</a>
+                                <a href="#">Advertising</a>
+                                <a href="#">Investors</a>
+                                <a href="#">Vendors</a>
+                            </div>
+                            <div id="links">
+                                <h5>Useful links</h5>
+                                <a href="#">Support</a>
+                                <a href="#">Free Mobile App</a>
+                            </div>
+                        </div>
+                        <div id="footer_icons">
+                            <div id="insta"><i class="fa-brands fa-instagram"></i></div>
+                            <div id="twitter"><i class="fa-brands fa-twitter"></i></div>
+                            <div id="facebook"><i class="fa-brands fa-facebook"></i></div>
+                        </div>
+                    </div>
+                    <hr id="line">
+                    <div id="lower_footer">
+                        <div id="lower_footer_info">
+                            <a href="#">Legal</a>
+                            <a href="#">Privac Center</a>
+                            <a href="#">Privacy Policy</a>
+                            <a href="#">Cookies</a>
+                            <a href="#">About Ads</a>
+                            <a href="#">Accessibility</a>
+                        </div>
+                        <div id="copywrite"><p>&copy; 2023 Spotify AB</p></div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </body>
+</html>
